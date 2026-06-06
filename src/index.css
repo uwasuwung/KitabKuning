@@ -1,0 +1,100 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Lateef&family=Reem+Kufi:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom styles for Kitab Kuning classical view */
+
+.kitab-yellow-paper {
+  background-color: #fcf6e5; /* Vintage warm cream-yellow of traditional kitabs */
+}
+
+/* Red double border mimicking traditional Islamic print block presses */
+.border-kitab-double-red {
+  border: 4px double #b91c1c;
+}
+
+/* Decorative corner ornaments for traditional look */
+.corner-ornament-tl {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #b91c1c;
+  border-left: 2px solid #b91c1c;
+}
+
+.corner-ornament-tr {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #b91c1c;
+  border-right: 2px solid #b91c1c;
+}
+
+.corner-ornament-bl {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid #b91c1c;
+  border-left: 2px solid #b91c1c;
+}
+
+.corner-ornament-br {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid #b91c1c;
+  border-right: 2px solid #b91c1c;
+}
+
+/* Arabesque Border Gold styling */
+.border-kitab-arabesque-gold {
+  border: 4px double #d97706;
+}
+
+/* Fine pattern mimicking printing press watermark */
+.kitab-paper-grain {
+  background-image: radial-gradient(rgba(180, 160, 110, 0.08) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+/* Scrollbars customized to look minimalist and classic */
+.kitab-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.kitab-scroll::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+}
+.kitab-scroll::-webkit-scrollbar-thumb {
+  background: rgba(185, 28, 28, 0.3);
+  border-radius: 3px;
+}
+.kitab-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(185, 28, 28, 0.5);
+}
+
+/* Direct styles for text selection and printing */
+@media print {
+  body {
+    background: #ffffff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-page-break {
+    page-break-after: always;
+  }
+}

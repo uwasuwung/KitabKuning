@@ -1,0 +1,6 @@
+{
+  "name": "Kitab Kuning CSS Standard",
+  "description": "Interactive layout designer and CSS standard generator for classic Kitab Kuning (yellow book) in folio size, featuring multi-column commentaries, traditional frames, and interlinear spacing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
